@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="720.0" style="-fx-background-color: #CCCCFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pensionfond.DohodiController">
+   <children>
+      <Text fx:id="welcomeText" layoutX="40.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Доходи:" textAlignment="CENTER">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Text>
+      <ScrollPane fx:id="scrollPane" layoutX="20.0" layoutY="81.0" prefHeight="246.0" prefWidth="680.0">
+         <content>
+            <GridPane fx:id="gridPane">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Text fx:id="alltime" layoutX="40.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дохід за весь час:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="currentime" layoutX="540.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Поточний дохід:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="allTimeDohid" layoutX="40.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="currentDohid" layoutX="652.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="goBackButton" layoutX="629.0" layoutY="47.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="Назад" />
+      <DatePicker fx:id="fromPicker" layoutX="319.0" layoutY="47.0" prefHeight="25.0" prefWidth="134.0" promptText="Від:" />
+      <DatePicker fx:id="toPicker" layoutX="473.0" layoutY="47.0" prefHeight="25.0" prefWidth="134.0" promptText="До:" />
+   </children>
+</AnchorPane>
